@@ -1,0 +1,17 @@
+.color {
+    color: black; /* Start with black color */
+    animation: color 2s linear infinite; /* Animation properties */
+  }
+  
+  @keyframes color {
+    0% {
+      color: black;
+    }
+    50% {
+      color: blue; /* End with blue color */
+    }
+    100% {
+      color: black;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.move {
+    position: relative; /* Make sure the element is positioned relatively */
+    animation: move 2s linear infinite; /* Animation properties */
+  }
+  
+  @keyframes move {
+    0% {
+      left: 0; /* Start at the left side of the parent container */
+    }
+    100% {
+      left: 100%; /* End at the right side of the parent container */
+    }
+  }
+  
