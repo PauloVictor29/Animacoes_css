@@ -1,8 +1,26 @@
-.animate-button {
-    transition: transform 0.2s ease-in-out;
+.barra_de_progresso{
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
   }
   
-  .animate-button:hover {
-    transform: scale(1.2);
+  .progresso {
+    width: 0%;
+    height: 100%;
+    background-color: #0096ff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: progress 2s linear;
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
   }
   

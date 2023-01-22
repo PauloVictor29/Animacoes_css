@@ -1,26 +1,18 @@
-.progress-bar {
-    width: 300px;
-    height: 20px;
-    background-color: #ddd;
-    position: relative;
+.Caarregamento {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ddd;
+    border-top-color: #0096ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
   }
-  
-  .progress {
-    width: 0%;
-    height: 100%;
-    background-color: #0096ff;
-    position: absolute;
-    left: 0;
-    top: 0;
-    animation: progress 2s linear;
-  }
-  
-  @keyframes progress {
+
+  @keyframes spin {
     0% {
-      width: 0%;
+      transform: rotate(0deg);
     }
     100% {
-      width: 75%;
+      transform: rotate(360deg);
     }
-  }
-  
+
+}  

@@ -1,14 +1,14 @@
-.move {
-    position: relative; /* Make sure the element is positioned relatively */
-    animation: move 2s linear infinite; /* Animation properties */
-  }
-  
-  @keyframes move {
-    0% {
-      left: 0; /* Start at the left side of the parent container */
+p{
+  animation-duration: 3s;
+  animation-name: deslizando;
+}
+@keyframes deslizando {
+    from{
+        margin-left: 100%;
+        width: 300%;
     }
-    100% {
-      left: 100%; /* End at the right side of the parent container */
+    to{
+        margin: left 0%;
+        width: 100%;
     }
-  }
-  
+}
